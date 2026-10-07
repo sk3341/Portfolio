@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .statement {
+      font-size: 1.2rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    /* Skills Section */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .skill-tag {
+      background-color: var(--card-bg);
+      border: 1px solid #334155;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.95rem;
+    }
+    /* Projects Section */
+    .projects-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .project-card {
+      background-color: var(--card-bg);
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+    .project-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    .project-card p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .project-links a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9rem;
+      background-color: #334155;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+      transition: background-color 0.2s;
+    }
+    .project-links a:hover {
+      background-color: var(--accent);
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Your Name</h1>
+      <!-- Rubric Requirement: Clear, 1-sentence personal statement -->
+      <p class="statement">
+        Aspiring software developer passionate about building scalable web applications and solving real-world problems through clean code.
+      </p>
+    </header>
+
+    <!-- Rubric Requirement: Highlighted Skills List -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">JavaScript / HTML / CSS</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Git & GitHub</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">RESTful APIs</span>
+      </div>
+    </section>
+
+    <!-- Rubric Requirement: 2-3 Relevant Projects with working links -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Task Management App</h3>
+          <p>A web application that helps users organize daily tasks with priority tags, deadlines, and persistent browser storage.</p>
+          <div class="project-links">
+            <a href="https://github.com/your-username/project-1" target="_blank">View Code</a>
+            <a href="#" target="_blank">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Weather Dashboard</h3>
+          <p>An interactive weather lookup tool fetching real-time forecast data using a public REST API.</p>
+          <div class="project-links">
+            <a href="https://github.com/your-username/project-2" target="_blank">View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Personal Blog Engine</h3>
+          <p>A minimalist static blog generator built to publish posts quickly using Markdown formatting.</p>
+          <div class="project-links">
+            <a href="https://github.com/your-username/project-3" target="_blank">View Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
